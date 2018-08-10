@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add property</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Add property</h1>
+	</div>
+	<div class="prop">
+		<form action="POST">
+			Property Name: <input type="text" name="propertyname" id="propname"><br>
+			<br>
+			<!-- property:  <input type="text" name="propertyname"><br> -->
+			price:	 <input type="text" name="propertyprice" id="propprice"><br>	
+			<br>	
+			Property Location: <input type="text" name="propertylocation" id="proplocation"> <br>
+			<button id="addButton">Add property</button>
+		</form>
+		<script type="text/javascript">			
+
+			document.getElementById('addButton').addEventListener('click', function() {
+				var propname = document.getElementById('propname').value;
+				var propprice = document.getElementById('propprice').value;
+				var proplocation = document.getElementById('proplocation').value;
+				
+			});
+		</script>
+	</div>
+</body>
+</html>
